@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Julius Alison G. Chua — BSIT graduate, application programmer, and aspiring IT professional." />
+  <title>Julius Alison G. Chua | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="brand"><span>J</span>CHUA</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR ENTRY-LEVEL IT OPPORTUNITIES</div>
+        <h1>Applying support<br><span class="gradient-text">focused IT systems.</span></h1>
+        <p class="hero-text">
+          I'm <strong>Julius Alison G. Chua</strong>, a BSIT graduate majoring in Application Programming,
+          with hands-on experience in web development, hardware maintenance, troubleshooting, and technical support.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View my work <span>↗</span></a>
+          <a class="btn ghost" href="#contact">Let's connect</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>BSIT</strong><span>Application Programming</span></div>
+          <div><strong>Cum Laude</strong><span>Academic Achievement</span></div>
+          <div><strong>IT Intern</strong><span>Practical Experience</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">  
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="hero-image">
+          <img src="images/myphoto.jpeg" alt="Julius Chua">
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <div><p class="kicker">ABOUT ME</p><h2>Technology with a<br><em>helpful approach.</em></h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a motivated BSIT graduate majoring in Application Programming with practical
+            experience from an academic practicum at Baler Municipal Police Station.
+          </p>
+          <p>
+            My experience includes diagnosing computer and software issues, configuring printers,
+            managing digital documents, and supporting office personnel.
+            I also developed <strong>DocuMed</strong>, a digital records and medicine tracking
+            system, as my capstone project.
+          </p>
+          <p>
+            I enjoy solving problems, learning new technologies, and turning requirements into
+            useful and organized software.
+          </p>
+        </div>
+        <div class="about-card reveal delay-1">
+          <div class="mini-label">EDUCATION</div>
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p>Major in Application Programming</p>
+          <span class="tag">2024 — 2026 · Cum Laude</span>
+          <hr>
+          <h3>Associate in Computer Technology</h3>
+          <p>With Honors</p>
+          <span class="tag">2022 — 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <div><p class="kicker">SKILLS</p><h2>Tools I use to<br><em>solve problems.</em></h2></div>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><span class="skill-icon">&lt;/&gt;</span><h3>Programming</h3><p>PHP · Java · JavaScript · Dart · HTML5 · CSS3 · SQL</p></article>
+          <article class="skill-card reveal delay-1"><span class="skill-icon">DB</span><h3>Database</h3><p>MySQL · phpMyAdmin · Relational Database Design</p></article>
+          <article class="skill-card reveal delay-2"><span class="skill-icon">UI</span><h3>Web & Mobile</h3><p>Bootstrap · Flutter · Firebase · Responsive Interfaces</p></article>
+          <article class="skill-card reveal"><span class="skill-icon">IT</span><h3>IT Support</h3><p>Hardware & Software Troubleshooting · Windows · BIOS · Printers</p></article>
+          <article class="skill-card reveal delay-1"><span class="skill-icon">DEV</span><h3>Development Tools</h3><p>VS Code · Android Studio · XAMPP · Git · GitHub</p></article>
+          <article class="skill-card reveal delay-2"><span class="skill-icon">MS</span><h3>Productivity</h3><p>Microsoft Word · Excel · PowerPoint · Document Management</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <div><p class="kicker">PROJECTS</p><h2>Things I've<br><em>built & explored.</em></h2></div>
+      </div>
+
+      <article class="project-feature reveal">
+        <div class="project-visual documed">
+          <div class="mock-dashboard" onclick="openGallery('documed')">
+              <img src="images/documed-dashboard.png" alt="DocuMed Dashboard">
+              <div class="view-project">VIEW SCREENSHOTS</div>
+            </div>
+          <span class="project-orb">01</span>
+        </div>
+        <div class="project-info">
+          <span class="project-type">CAPSTONE PROJECT · 2026</span>
+          <h3>DocuMed</h3>
+          <p class="project-title">Health Center Digital Records & Reporting with Medicine Tracking</p>
+          <p>
+            A web-based system designed to improve patient information management, medicine
+            inventory tracking, revisit records, and report generation for a local health center.
+          </p>
+          <ul>
+            <li>Designed a normalized relational database</li>
+            <li>Implemented patient and medicine inventory modules</li>
+            <li>Added reporting, revisit, and medicine tracking features</li>
+            <li>Performed testing and debugging throughout development</li>
+          </ul>
+          <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span><span>XAMPP</span></div>
+        </div>
+      </article>
+
+      <article class="project-feature reverse reveal">
+        <div class="project-visual trikego">
+          <div class="phone-mock" onclick="openGallery('trikego')">
+            <img src="images/trikego-login.jpg" alt="TrikeGo Home Screen">
+            <div class="view-project">VIEW SCREENSHOTS</div>
+          </div>
+          <span class="project-orb">02</span>
+        </div>
+        <div class="project-info">
+          <span class="project-type">PERSONAL PROJECT · JULY 2026 — PRESENT</span>
+          <h3>TrikeGo</h3>
+          <p class="project-title">Tricycle Booking Application</p>
+          <p>
+            A mobile application project created to strengthen practical knowledge in mobile
+            development, authentication, and booking workflows.
+          </p>
+          <ul>
+            <li>Building the mobile interface with Flutter and Dart</li>
+            <li>Exploring Firebase authentication and cloud data</li>
+            <li>Designing customer and driver booking flows</li>
+          </ul>
+          <div class="tech-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">04</span>
+          <div><p class="kicker">EXPERIENCE</p><h2>Learning through<br><em>real-world support.</em></h2></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-date">FEB 2026 — MAY 2026</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span>ACADEMIC PRACTICUM</span>
+              <h3>IT Intern · Baler Municipal Police Station</h3>
+              <p>Provided hands-on IT and office technology support across multiple offices.</p>
+              <div class="experience-tags">
+                <span>PC Troubleshooting</span><span>Printer Support</span><span>Software Configuration</span>
+                <span>Document Management</span><span>Technical Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section container" id="contact">
+      <div class="contact-box reveal">
+        <div>
+          <p class="kicker">05 · CONTACT</p>
+          <h2>Let's build something<br><em>useful.</em></h2>
+          <p>I'm open to entry-level IT opportunities, technical support, QA, and software-related roles.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:jhubitter@gmail.com"><span>EMAIL</span>jhubitter@gmail.com ↗</a>
+          <a href="tel:+639615500468"><span>PHONE</span>0961 550 0468 ↗</a>
+          <div><span>LOCATION</span>San Luis, Aurora, Philippines</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="gallery" class="gallery">
+    <button class="gallery-close" onclick="closeGallery()">×</button>
+
+    <button class="gallery-prev" onclick="previousImage()">‹</button>
+
+    <div class="gallery-content">
+      <img id="galleryImage" src="" alt="Project screenshot">
+      <div id="galleryCaption"></div>
+    </div>
+
+    <button class="gallery-next" onclick="nextImage()">›</button>
+
+    <div class="gallery-counter">
+      <span id="galleryCurrent">1</span> /
+      <span id="galleryTotal">1</span>
+    </div>
+  </div>
+
+  <footer class="container footer">
+    <span>© 2026 Julius Alison G. Chua</span>
+    <span>Designed & built with HTML · CSS · JavaScript</span>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>

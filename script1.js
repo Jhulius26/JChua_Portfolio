@@ -141,3 +141,60 @@ document.addEventListener("keydown", function(e) {
     previousImage();
   }
 });
+
+  const schoolSlides = document.querySelectorAll(".school-slide");
+
+  let currentSchoolSlide = 0;
+
+  function showSchoolSlide(index) {
+    schoolSlides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  setInterval(() => {
+    currentSchoolSlide =
+      (currentSchoolSlide + 1) % schoolSlides.length;
+
+    showSchoolSlide(currentSchoolSlide);
+  }, 3000);
+
+  const practicumSlides = document.querySelectorAll(".practicum-slide");
+
+  let currentPracticumSlide = 0;
+
+  function showPracticumSlide(index) {
+    practicumSlides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  setInterval(() => {
+    currentPracticumSlide =
+      (currentPracticumSlide + 1) % practicumSlides.length;
+
+    showPracticumSlide(currentPracticumSlide);
+  }, 5000);
+
+  document.querySelectorAll(".skill-logo-slideshow").forEach(slideshow => {
+
+    const logos = slideshow.querySelectorAll("img");
+
+    if (!logos.length) return;
+
+    let current = 0;
+    const interval = parseInt(slideshow.dataset.interval) || 2200;
+
+    logos[0].classList.add("active");
+
+    setInterval(() => {
+
+      logos[current].classList.remove("active");
+
+      current = (current + 1) % logos.length;
+
+      logos[current].classList.add("active");
+
+    }, interval);
+
+  });
